@@ -25,7 +25,9 @@
     [self loadUIWebView];
 }
 
+
 -(void)initMainScreen{
+    self.webView.clipsToBounds = NO;
     CGFloat top = 20;
     self.webView.scrollView.contentInset = UIEdgeInsetsMake (top, 0, 0, 0);
     self.webView.scrollView.showsHorizontalScrollIndicator = NO;
