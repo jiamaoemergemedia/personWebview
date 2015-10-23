@@ -26,6 +26,8 @@
 }
 
 -(void)initMainScreen{
+    CGFloat top = 20;
+    self.webView.scrollView.contentInset = UIEdgeInsetsMake (top, 0, 0, 0);
     self.webView.scrollView.showsHorizontalScrollIndicator = NO;
     self.webView.scrollView.showsVerticalScrollIndicator = NO;
     self.view.center = self.loaderView.center;
