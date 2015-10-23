@@ -53,9 +53,46 @@
  
 }
 
+-(void)viewDidLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    
+    
+    //manage rotation
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        UIView *view = [[UIView alloc]init];
+        if (UIInterfaceOrientationIsPortrait(orientation)) {
+            for (UIView *subview in [self.view subviews]) {
+                if (subview.tag == 9) {
+                    [subview removeFromSuperview];
+                }
+            }
+            view.tag = 8;
+            view.frame = CGRectMake(0, 50,self.view.bounds.size.width, 20);
+            view.backgroundColor=[UIColor blackColor];
+            [self.view addSubview:view];
+         
+        }
+        if (UIInterfaceOrientationIsLandscape(orientation)) {
+                    }
+    }
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0,self.view.bounds.size.width, 20)];
+        view.backgroundColor=[UIColor blackColor];
+        [self.view addSubview:view];
+    
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (IBAction)updateNow:(UIButton *)sender {
