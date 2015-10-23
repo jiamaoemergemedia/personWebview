@@ -58,7 +58,7 @@
                 }
             }
             view.tag = 9;
-            self.webView.scrollView.contentInset = UIEdgeInsetsMake (0, 0,0, 0);
+            self.webView.scrollView.contentInset = UIEdgeInsetsMake (20, 0,0, 0);
         }
        
     }
