@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,34 +17,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PLEASE UPDATE " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he4-OK-HL3">
-                                <rect key="frame" x="135" y="257" width="300" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In order to user the latest features, you must update this app. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ism-LY-Ys8">
-                                <rect key="frame" x="135" y="275" width="300" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKC-Qe-qUU">
-                                <rect key="frame" x="135" y="332" width="300" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="UPDATE NOW ">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="updateNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBQ-XW-PhF"/>
-                                    <segue destination="jqQ-bh-1fa" kind="showDetail" id="oR6-xA-y3n"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tBj-83-Eox">
+                                <rect key="frame" x="0.0" y="-7" width="605" height="607"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PLEASE UPDATE " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he4-OK-HL3">
+                                        <rect key="frame" x="150" y="244" width="300" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="065-Un-rq7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKC-Qe-qUU">
+                                        <rect key="frame" x="150" y="319" width="300" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="be4-72-1P3"/>
+                                        </constraints>
+                                        <state key="normal" title="UPDATE NOW ">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBQ-XW-PhF"/>
+                                            <segue destination="jqQ-bh-1fa" kind="showDetail" id="oR6-xA-y3n"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="In order to user the latest features, you must update this app. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ism-LY-Ys8">
+                                        <rect key="frame" x="150" y="262" width="300" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="biR-Uk-Zwg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HKC-Qe-qUU" firstAttribute="top" secondItem="he4-OK-HL3" secondAttribute="bottom" constant="54" id="2P1-ae-MvE"/>
+                                    <constraint firstItem="he4-OK-HL3" firstAttribute="top" secondItem="tBj-83-Eox" secondAttribute="top" constant="244" id="K2g-BH-2NA"/>
+                                    <constraint firstAttribute="trailing" secondItem="he4-OK-HL3" secondAttribute="trailing" constant="155" id="KAA-Mv-aqc"/>
+                                    <constraint firstAttribute="bottom" secondItem="HKC-Qe-qUU" secondAttribute="bottom" constant="238" id="WVU-Eb-aKc"/>
+                                    <constraint firstItem="HKC-Qe-qUU" firstAttribute="top" secondItem="ism-LY-Ys8" secondAttribute="bottom" constant="8" symbolic="YES" id="Wzp-2W-qnC"/>
+                                    <constraint firstItem="he4-OK-HL3" firstAttribute="trailing" secondItem="ism-LY-Ys8" secondAttribute="trailing" id="X2k-1b-MRX"/>
+                                    <constraint firstItem="ism-LY-Ys8" firstAttribute="trailing" secondItem="HKC-Qe-qUU" secondAttribute="trailing" id="dek-Lm-LfL"/>
+                                    <constraint firstItem="HKC-Qe-qUU" firstAttribute="leading" secondItem="ism-LY-Ys8" secondAttribute="leading" id="fz4-W4-3qF"/>
+                                    <constraint firstItem="he4-OK-HL3" firstAttribute="leading" secondItem="tBj-83-Eox" secondAttribute="leading" constant="150" id="joF-we-FgC"/>
+                                    <constraint firstItem="he4-OK-HL3" firstAttribute="leading" secondItem="ism-LY-Ys8" secondAttribute="leading" id="pNn-jN-RpX"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tBj-83-Eox" secondAttribute="bottom" id="2gc-Dt-o08"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tBj-83-Eox" secondAttribute="trailing" constant="-21" id="Zn3-Lb-JLa"/>
+                            <constraint firstItem="tBj-83-Eox" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="bSj-pz-amh"/>
+                            <constraint firstItem="tBj-83-Eox" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-27" id="tch-jb-bFr"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="inOrderTo" destination="ism-LY-Ys8" id="HU6-gZ-z7G"/>
