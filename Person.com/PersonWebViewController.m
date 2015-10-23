@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.webView.hidden = YES;
+    self.view.backgroundColor = [UIColor colorWithRed:0.0f/255.0f
+                                                green:149.0f/255.0f
+                                                 blue:255.0f/255.0f
+                                                alpha:1.0f];
+    
+    
     [self.loading setFont:[UIFont fontWithName:@"OpenSans-Bold" size:18]];
     [self.loading setText:@"LOADING"];
     self.loading.textColor = [UIColor whiteColor];
