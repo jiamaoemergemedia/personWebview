@@ -41,6 +41,12 @@
     self.loader.animatedImage = loaderAnimation;
 }
 
+-(void)hideLoader{
+    self.webView.hidden = NO;
+    self.loading.hidden = YES;
+    self.loader.hidden = YES;
+}
+
 -(void)loadUIWebView{
     [[PersonSharedNetworking sharedSharedNetWorking] getFeedForURL:nil
                                                      success:^(NSDictionary *dictionary, NSError *error){
@@ -48,15 +54,21 @@
                                                         //Use dispatch_async to update the table on the main thread
                                                          dispatch_async(dispatch_get_main_queue(), ^{
                                                              NSLog(@"Success with Data");
+                                                            
                                                              [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://beta.person.com"]]];
-                                                             self.webView.hidden = NO;
-                                                             self.loading.hidden = YES;
-                                                             self.loader.hidden = YES;
+                                                             
+                                                                 [NSTimer scheduledTimerWithTimeInterval:1
+                                                                                                  target:self
+                                                                                                selector:@selector(hideLoader)
+                                                                                                userInfo:nil
+                                                                                                 repeats:YES];
+                                                             
                                                          
                                                          });
                                                      }failure:^{
                                                          dispatch_async(dispatch_get_main_queue(), ^{
                                                              NSLog(@"Problem with Data");
+                                                             [self animateLoader];
                                                          });
                                                      }];
 }

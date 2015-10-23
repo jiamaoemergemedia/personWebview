@@ -17,6 +17,7 @@
                                delegate:self
                       cancelButtonTitle:@"OK"
                       otherButtonTitles:nil, nil] show];
+    return; 
 }
 
 @end
