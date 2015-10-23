@@ -28,6 +28,8 @@
 		12E490381BDA810C00C07FCD /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E4902D1BDA801100C07FCD /* OpenSans-Semibold.ttf */; };
 		12E490391BDA810C00C07FCD /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E4902E1BDA801100C07FCD /* OpenSans-SemiboldItalic.ttf */; };
 		12E4903C1BDA84EE00C07FCD /* PersonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E4903B1BDA84EE00C07FCD /* PersonWebViewController.m */; };
+		12E490431BDA89CD00C07FCD /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490401BDA89CD00C07FCD /* FLAnimatedImage.m */; };
+		12E490441BDA89CD00C07FCD /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490421BDA89CD00C07FCD /* FLAnimatedImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		12E4902E1BDA801100C07FCD /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		12E4903A1BDA84EE00C07FCD /* PersonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonWebViewController.h; sourceTree = "<group>"; };
 		12E4903B1BDA84EE00C07FCD /* PersonWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonWebViewController.m; sourceTree = "<group>"; };
+		12E4903F1BDA89CD00C07FCD /* FLAnimatedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImage.h; sourceTree = "<group>"; };
+		12E490401BDA89CD00C07FCD /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
+		12E490411BDA89CD00C07FCD /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
+		12E490421BDA89CD00C07FCD /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,17 +135,8 @@
 		12E48FF91BDA7ADB00C07FCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				12E490241BDA801100C07FCD /* person.ttf */,
-				12E490251BDA801100C07FCD /* OpenSans-Bold.ttf */,
-				12E490261BDA801100C07FCD /* OpenSans-BoldItalic.ttf */,
-				12E490271BDA801100C07FCD /* OpenSans-ExtraBold.ttf */,
-				12E490281BDA801100C07FCD /* OpenSans-ExtraBoldItalic.ttf */,
-				12E490291BDA801100C07FCD /* OpenSans-Italic.ttf */,
-				12E4902A1BDA801100C07FCD /* OpenSans-Light.ttf */,
-				12E4902B1BDA801100C07FCD /* OpenSans-LightItalic.ttf */,
-				12E4902C1BDA801100C07FCD /* OpenSans-Regular.ttf */,
-				12E4902D1BDA801100C07FCD /* OpenSans-Semibold.ttf */,
-				12E4902E1BDA801100C07FCD /* OpenSans-SemiboldItalic.ttf */,
+				12E4903E1BDA899400C07FCD /* AnimationGifLibrary */,
+				12E4903D1BDA898600C07FCD /* font */,
 				12E48FFA1BDA7ADB00C07FCD /* Info.plist */,
 				12E48FFB1BDA7ADB00C07FCD /* main.m */,
 			);
@@ -161,6 +158,35 @@
 				12E490171BDA7ADB00C07FCD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12E4903D1BDA898600C07FCD /* font */ = {
+			isa = PBXGroup;
+			children = (
+				12E490241BDA801100C07FCD /* person.ttf */,
+				12E490251BDA801100C07FCD /* OpenSans-Bold.ttf */,
+				12E490261BDA801100C07FCD /* OpenSans-BoldItalic.ttf */,
+				12E490271BDA801100C07FCD /* OpenSans-ExtraBold.ttf */,
+				12E490281BDA801100C07FCD /* OpenSans-ExtraBoldItalic.ttf */,
+				12E490291BDA801100C07FCD /* OpenSans-Italic.ttf */,
+				12E4902A1BDA801100C07FCD /* OpenSans-Light.ttf */,
+				12E4902B1BDA801100C07FCD /* OpenSans-LightItalic.ttf */,
+				12E4902C1BDA801100C07FCD /* OpenSans-Regular.ttf */,
+				12E4902D1BDA801100C07FCD /* OpenSans-Semibold.ttf */,
+				12E4902E1BDA801100C07FCD /* OpenSans-SemiboldItalic.ttf */,
+			);
+			name = font;
+			sourceTree = "<group>";
+		};
+		12E4903E1BDA899400C07FCD /* AnimationGifLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				12E4903F1BDA89CD00C07FCD /* FLAnimatedImage.h */,
+				12E490401BDA89CD00C07FCD /* FLAnimatedImage.m */,
+				12E490411BDA89CD00C07FCD /* FLAnimatedImageView.h */,
+				12E490421BDA89CD00C07FCD /* FLAnimatedImageView.m */,
+			);
+			name = AnimationGifLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E490441BDA89CD00C07FCD /* FLAnimatedImageView.m in Sources */,
 				12E490021BDA7ADB00C07FCD /* Person_com.xcdatamodeld in Sources */,
 				12E48FFF1BDA7ADB00C07FCD /* AppDelegate.m in Sources */,
+				12E490431BDA89CD00C07FCD /* FLAnimatedImage.m in Sources */,
 				12E490051BDA7ADB00C07FCD /* ViewController.m in Sources */,
 				12E48FFC1BDA7ADB00C07FCD /* main.m in Sources */,
 				12E4903C1BDA84EE00C07FCD /* PersonWebViewController.m in Sources */,
@@ -479,6 +507,7 @@
 				12E4901E1BDA7ADB00C07FCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12E4901F1BDA7ADB00C07FCD /* Build configuration list for PBXNativeTarget "Person.comTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +516,7 @@
 				12E490211BDA7ADB00C07FCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

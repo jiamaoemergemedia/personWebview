@@ -38,11 +38,12 @@
                                                      alpha:1.0f];
     
     
-    [self.updateNowButton setTitle:@"Sign Up" forState:UIControlStateNormal];
+    [self.updateNowButton setTitle:@"UPDATE NOW" forState:UIControlStateNormal];
     [self.updateNowButton setTitleColor:[UIColor colorWithRed:0.0f/255.0f
                                                         green:149.0f/255.0f
                                                          blue:255.0f/255.0f
                                                         alpha:1.0f] forState:UIControlStateNormal];
+    self.updateNowButton.titleLabel.font = [UIFont fontWithName:@"OpenSans-Bold" size:18];
     self.updateNowButton.backgroundColor = [UIColor whiteColor];
  
 }
