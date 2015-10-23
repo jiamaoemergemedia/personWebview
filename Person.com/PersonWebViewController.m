@@ -25,10 +25,6 @@
     [self loadUIWebView];
 }
 
-
-
-
-
 -(void)initMainScreen{
     self.view.center = self.loaderView.center;
     self.webView.hidden = YES;
