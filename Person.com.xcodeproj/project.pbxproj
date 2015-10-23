@@ -15,6 +15,19 @@
 		12E4900A1BDA7ADB00C07FCD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E490091BDA7ADB00C07FCD /* Images.xcassets */; };
 		12E4900D1BDA7ADB00C07FCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E4900B1BDA7ADB00C07FCD /* LaunchScreen.xib */; };
 		12E490191BDA7ADB00C07FCD /* Person_comTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490181BDA7ADB00C07FCD /* Person_comTests.m */; };
+		12E490231BDA7E7E00C07FCD /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 12E490221BDA7E7E00C07FCD /* loader.gif */; };
+		12E4902F1BDA810C00C07FCD /* person.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E490241BDA801100C07FCD /* person.ttf */; };
+		12E490301BDA810C00C07FCD /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E490251BDA801100C07FCD /* OpenSans-Bold.ttf */; };
+		12E490311BDA810C00C07FCD /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E490261BDA801100C07FCD /* OpenSans-BoldItalic.ttf */; };
+		12E490321BDA810C00C07FCD /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E490271BDA801100C07FCD /* OpenSans-ExtraBold.ttf */; };
+		12E490331BDA810C00C07FCD /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E490281BDA801100C07FCD /* OpenSans-ExtraBoldItalic.ttf */; };
+		12E490341BDA810C00C07FCD /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E490291BDA801100C07FCD /* OpenSans-Italic.ttf */; };
+		12E490351BDA810C00C07FCD /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E4902A1BDA801100C07FCD /* OpenSans-Light.ttf */; };
+		12E490361BDA810C00C07FCD /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E4902B1BDA801100C07FCD /* OpenSans-LightItalic.ttf */; };
+		12E490371BDA810C00C07FCD /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E4902C1BDA801100C07FCD /* OpenSans-Regular.ttf */; };
+		12E490381BDA810C00C07FCD /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E4902D1BDA801100C07FCD /* OpenSans-Semibold.ttf */; };
+		12E490391BDA810C00C07FCD /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E4902E1BDA801100C07FCD /* OpenSans-SemiboldItalic.ttf */; };
+		12E4903C1BDA84EE00C07FCD /* PersonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E4903B1BDA84EE00C07FCD /* PersonWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +55,20 @@
 		12E490121BDA7ADB00C07FCD /* Person.comTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Person.comTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E490171BDA7ADB00C07FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E490181BDA7ADB00C07FCD /* Person_comTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person_comTests.m; sourceTree = "<group>"; };
+		12E490221BDA7E7E00C07FCD /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		12E490241BDA801100C07FCD /* person.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = person.ttf; sourceTree = "<group>"; };
+		12E490251BDA801100C07FCD /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		12E490261BDA801100C07FCD /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		12E490271BDA801100C07FCD /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		12E490281BDA801100C07FCD /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		12E490291BDA801100C07FCD /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		12E4902A1BDA801100C07FCD /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		12E4902B1BDA801100C07FCD /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		12E4902C1BDA801100C07FCD /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		12E4902D1BDA801100C07FCD /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		12E4902E1BDA801100C07FCD /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		12E4903A1BDA84EE00C07FCD /* PersonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonWebViewController.h; sourceTree = "<group>"; };
+		12E4903B1BDA84EE00C07FCD /* PersonWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				12E48FFD1BDA7ADB00C07FCD /* AppDelegate.h */,
+				12E490221BDA7E7E00C07FCD /* loader.gif */,
 				12E48FFE1BDA7ADB00C07FCD /* AppDelegate.m */,
 				12E490031BDA7ADB00C07FCD /* ViewController.h */,
 				12E490041BDA7ADB00C07FCD /* ViewController.m */,
+				12E4903A1BDA84EE00C07FCD /* PersonWebViewController.h */,
+				12E4903B1BDA84EE00C07FCD /* PersonWebViewController.m */,
 				12E490061BDA7ADB00C07FCD /* Main.storyboard */,
 				12E490091BDA7ADB00C07FCD /* Images.xcassets */,
 				12E4900B1BDA7ADB00C07FCD /* LaunchScreen.xib */,
@@ -99,6 +129,17 @@
 		12E48FF91BDA7ADB00C07FCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12E490241BDA801100C07FCD /* person.ttf */,
+				12E490251BDA801100C07FCD /* OpenSans-Bold.ttf */,
+				12E490261BDA801100C07FCD /* OpenSans-BoldItalic.ttf */,
+				12E490271BDA801100C07FCD /* OpenSans-ExtraBold.ttf */,
+				12E490281BDA801100C07FCD /* OpenSans-ExtraBoldItalic.ttf */,
+				12E490291BDA801100C07FCD /* OpenSans-Italic.ttf */,
+				12E4902A1BDA801100C07FCD /* OpenSans-Light.ttf */,
+				12E4902B1BDA801100C07FCD /* OpenSans-LightItalic.ttf */,
+				12E4902C1BDA801100C07FCD /* OpenSans-Regular.ttf */,
+				12E4902D1BDA801100C07FCD /* OpenSans-Semibold.ttf */,
+				12E4902E1BDA801100C07FCD /* OpenSans-SemiboldItalic.ttf */,
 				12E48FFA1BDA7ADB00C07FCD /* Info.plist */,
 				12E48FFB1BDA7ADB00C07FCD /* main.m */,
 			);
@@ -171,6 +212,7 @@
 				TargetAttributes = {
 					12E48FF51BDA7ADB00C07FCD = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = XQ53UCH2B2;
 					};
 					12E490111BDA7ADB00C07FCD = {
 						CreatedOnToolsVersion = 6.4;
@@ -202,7 +244,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E4902F1BDA810C00C07FCD /* person.ttf in Resources */,
+				12E490301BDA810C00C07FCD /* OpenSans-Bold.ttf in Resources */,
+				12E490311BDA810C00C07FCD /* OpenSans-BoldItalic.ttf in Resources */,
+				12E490321BDA810C00C07FCD /* OpenSans-ExtraBold.ttf in Resources */,
+				12E490331BDA810C00C07FCD /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				12E490341BDA810C00C07FCD /* OpenSans-Italic.ttf in Resources */,
+				12E490351BDA810C00C07FCD /* OpenSans-Light.ttf in Resources */,
+				12E490361BDA810C00C07FCD /* OpenSans-LightItalic.ttf in Resources */,
+				12E490371BDA810C00C07FCD /* OpenSans-Regular.ttf in Resources */,
+				12E490381BDA810C00C07FCD /* OpenSans-Semibold.ttf in Resources */,
+				12E490391BDA810C00C07FCD /* OpenSans-SemiboldItalic.ttf in Resources */,
 				12E490081BDA7ADB00C07FCD /* Main.storyboard in Resources */,
+				12E490231BDA7E7E00C07FCD /* loader.gif in Resources */,
 				12E4900D1BDA7ADB00C07FCD /* LaunchScreen.xib in Resources */,
 				12E4900A1BDA7ADB00C07FCD /* Images.xcassets in Resources */,
 			);
@@ -226,6 +280,7 @@
 				12E48FFF1BDA7ADB00C07FCD /* AppDelegate.m in Sources */,
 				12E490051BDA7ADB00C07FCD /* ViewController.m in Sources */,
 				12E48FFC1BDA7ADB00C07FCD /* main.m in Sources */,
+				12E4903C1BDA84EE00C07FCD /* PersonWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Person.com/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Person.com/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
