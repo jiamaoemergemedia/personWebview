@@ -79,10 +79,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gh-uc-GaZ">
-                                <rect key="frame" x="0.0" y="-3" width="600" height="605"/>
+                                <rect key="frame" x="-11" y="-3" width="619" height="605"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BEr-HZ-Qii">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BEr-HZ-Qii">
                                 <rect key="frame" x="171" y="197" width="131" height="129"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOADING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2P-AD-MFP">
@@ -101,7 +101,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="BEr-HZ-Qii" firstAttribute="centerY" secondItem="6gh-uc-GaZ" secondAttribute="centerY" constant="-12" id="0Kb-4W-9au"/>
-                            <constraint firstAttribute="centerX" secondItem="6gh-uc-GaZ" secondAttribute="centerX" id="110-eI-nvc"/>
+                            <constraint firstAttribute="centerX" secondItem="6gh-uc-GaZ" secondAttribute="centerX" constant="1.5" id="110-eI-nvc"/>
                             <constraint firstAttribute="centerY" secondItem="BEr-HZ-Qii" secondAttribute="centerY" constant="11.5" id="1Ph-nG-2q4"/>
                             <constraint firstItem="BEr-HZ-Qii" firstAttribute="leading" secondItem="Ex7-fh-tCf" secondAttribute="leading" constant="235" id="1Se-G2-3fx"/>
                             <constraint firstItem="BEr-HZ-Qii" firstAttribute="leading" secondItem="Ex7-fh-tCf" secondAttribute="leadingMargin" constant="219" id="Ame-zJ-zNz"/>
@@ -119,9 +119,9 @@
                             <constraint firstItem="BEr-HZ-Qii" firstAttribute="top" secondItem="dNS-5r-Cud" secondAttribute="bottom" constant="204" id="XkM-a0-DaE"/>
                             <constraint firstItem="BEr-HZ-Qii" firstAttribute="top" secondItem="dNS-5r-Cud" secondAttribute="bottom" constant="204" id="d7n-aE-sQ6"/>
                             <constraint firstAttribute="centerX" secondItem="BEr-HZ-Qii" secondAttribute="centerX" constant="63.5" id="dwB-7p-hHW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="6gh-uc-GaZ" secondAttribute="trailing" constant="-16" id="hA6-RO-UPD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6gh-uc-GaZ" secondAttribute="trailing" constant="-24" id="hA6-RO-UPD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BEr-HZ-Qii" secondAttribute="trailing" constant="218" id="int-As-600"/>
-                            <constraint firstItem="6gh-uc-GaZ" firstAttribute="leading" secondItem="Ex7-fh-tCf" secondAttribute="leadingMargin" constant="-16" id="oRq-X1-2q6"/>
+                            <constraint firstItem="6gh-uc-GaZ" firstAttribute="leading" secondItem="Ex7-fh-tCf" secondAttribute="leadingMargin" constant="-27" id="oRq-X1-2q6"/>
                             <constraint firstItem="BEr-HZ-Qii" firstAttribute="centerX" secondItem="6gh-uc-GaZ" secondAttribute="centerX" constant="0.5" id="xMz-FX-dNI"/>
                         </constraints>
                         <variation key="default">

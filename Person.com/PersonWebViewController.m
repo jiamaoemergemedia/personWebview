@@ -113,6 +113,7 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     [self hideLoader];
+    self.webView.scrollView.contentOffset = CGPointMake(0, 0);
 }
 
 -(void)loadUIWebView{
