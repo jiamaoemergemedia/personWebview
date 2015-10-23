@@ -80,7 +80,7 @@
                 }
             }
             view.tag = 8;
-            view.frame = CGRectMake(0, 50,self.view.bounds.size.width, 20);
+            view.frame = CGRectMake(0, 0,self.view.bounds.size.width, 20);
             view.backgroundColor=[UIColor blackColor];
             [self.view addSubview:view];
         }
