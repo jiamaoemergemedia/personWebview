@@ -34,6 +34,7 @@
 		12E4904A1BDA98DD00C07FCD /* PersonInternetConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490491BDA98DD00C07FCD /* PersonInternetConnection.m */; };
 		12E4904E1BDA9AD500C07FCD /* Spashing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E4904D1BDA9AD500C07FCD /* Spashing.storyboard */; };
 		12E490511BDA9CB900C07FCD /* NSObject+PersonAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490501BDA9CB900C07FCD /* NSObject+PersonAlert.m */; };
+		12E490591BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490581BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		12E4904D1BDA9AD500C07FCD /* Spashing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Spashing.storyboard; sourceTree = "<group>"; };
 		12E4904F1BDA9CB900C07FCD /* NSObject+PersonAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PersonAlert.h"; sourceTree = "<group>"; };
 		12E490501BDA9CB900C07FCD /* NSObject+PersonAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PersonAlert.m"; sourceTree = "<group>"; };
+		12E490571BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonUIViewControllerTransitionSegue.h; sourceTree = "<group>"; };
+		12E490581BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonUIViewControllerTransitionSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 		12E48FF91BDA7ADB00C07FCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12E490571BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.h */,
+				12E490581BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m */,
 				12E490521BDA9CC400C07FCD /* PersonAlert */,
 				12E4904C1BDA9A0A00C07FCD /* PersonNetworkSetup */,
 				12E4904B1BDA98E600C07FCD /* PersonInternetConnection */,
@@ -349,6 +354,7 @@
 				12E490511BDA9CB900C07FCD /* NSObject+PersonAlert.m in Sources */,
 				12E490471BDA910E00C07FCD /* PersonSharedNetworking.m in Sources */,
 				12E490021BDA7ADB00C07FCD /* Person_com.xcdatamodeld in Sources */,
+				12E490591BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m in Sources */,
 				12E48FFF1BDA7ADB00C07FCD /* AppDelegate.m in Sources */,
 				12E490431BDA89CD00C07FCD /* FLAnimatedImage.m in Sources */,
 				12E490051BDA7ADB00C07FCD /* ViewController.m in Sources */,
