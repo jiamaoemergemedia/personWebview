@@ -32,6 +32,7 @@
 		12E490441BDA89CD00C07FCD /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490421BDA89CD00C07FCD /* FLAnimatedImageView.m */; };
 		12E490471BDA910E00C07FCD /* PersonSharedNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490461BDA910E00C07FCD /* PersonSharedNetworking.m */; };
 		12E4904A1BDA98DD00C07FCD /* PersonInternetConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490491BDA98DD00C07FCD /* PersonInternetConnection.m */; };
+		12E4904E1BDA9AD500C07FCD /* Spashing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E4904D1BDA9AD500C07FCD /* Spashing.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		12E490461BDA910E00C07FCD /* PersonSharedNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonSharedNetworking.m; sourceTree = "<group>"; };
 		12E490481BDA98DD00C07FCD /* PersonInternetConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInternetConnection.h; sourceTree = "<group>"; };
 		12E490491BDA98DD00C07FCD /* PersonInternetConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInternetConnection.m; sourceTree = "<group>"; };
+		12E4904D1BDA9AD500C07FCD /* Spashing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Spashing.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,13 +126,12 @@
 			children = (
 				12E48FFD1BDA7ADB00C07FCD /* AppDelegate.h */,
 				12E48FFE1BDA7ADB00C07FCD /* AppDelegate.m */,
+				12E490061BDA7ADB00C07FCD /* Main.storyboard */,
 				12E490031BDA7ADB00C07FCD /* ViewController.h */,
 				12E490041BDA7ADB00C07FCD /* ViewController.m */,
 				12E4903A1BDA84EE00C07FCD /* PersonWebViewController.h */,
 				12E4903B1BDA84EE00C07FCD /* PersonWebViewController.m */,
-				12E490061BDA7ADB00C07FCD /* Main.storyboard */,
-				12E490451BDA910E00C07FCD /* PersonSharedNetworking.h */,
-				12E490461BDA910E00C07FCD /* PersonSharedNetworking.m */,
+				12E4904D1BDA9AD500C07FCD /* Spashing.storyboard */,
 				12E490091BDA7ADB00C07FCD /* Images.xcassets */,
 				12E4900B1BDA7ADB00C07FCD /* LaunchScreen.xib */,
 				12E490001BDA7ADB00C07FCD /* Person_com.xcdatamodeld */,
@@ -142,6 +143,7 @@
 		12E48FF91BDA7ADB00C07FCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12E4904C1BDA9A0A00C07FCD /* PersonNetworkSetup */,
 				12E4904B1BDA98E600C07FCD /* PersonInternetConnection */,
 				12E4903E1BDA899400C07FCD /* AnimationGifLibrary */,
 				12E4903D1BDA898600C07FCD /* font */,
@@ -205,6 +207,15 @@
 				12E490491BDA98DD00C07FCD /* PersonInternetConnection.m */,
 			);
 			name = PersonInternetConnection;
+			sourceTree = "<group>";
+		};
+		12E4904C1BDA9A0A00C07FCD /* PersonNetworkSetup */ = {
+			isa = PBXGroup;
+			children = (
+				12E490451BDA910E00C07FCD /* PersonSharedNetworking.h */,
+				12E490461BDA910E00C07FCD /* PersonSharedNetworking.m */,
+			);
+			name = PersonNetworkSetup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 				12E490331BDA810C00C07FCD /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				12E490341BDA810C00C07FCD /* OpenSans-Italic.ttf in Resources */,
 				12E490351BDA810C00C07FCD /* OpenSans-Light.ttf in Resources */,
+				12E4904E1BDA9AD500C07FCD /* Spashing.storyboard in Resources */,
 				12E490361BDA810C00C07FCD /* OpenSans-LightItalic.ttf in Resources */,
 				12E490371BDA810C00C07FCD /* OpenSans-Regular.ttf in Resources */,
 				12E490381BDA810C00C07FCD /* OpenSans-Semibold.ttf in Resources */,

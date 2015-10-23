@@ -20,12 +20,9 @@
     if (![PersonInternetConnection isNetworkAvailable]) {
         return;
     }
-    
     [self initMainScreen];
     [self animateLoader];
     [self loadUIWebView];
-    
-    
 }
 
 -(void)initMainScreen{
