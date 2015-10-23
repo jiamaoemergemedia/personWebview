@@ -52,7 +52,21 @@
     self.loader.hidden = YES;
 }
 
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    [self animateLoader];
+}
+
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    [self hideLoader];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    [self hideLoader];
+}
+
 -(void)loadUIWebView{
+    self.webView.delegate=self;
     [[PersonSharedNetworking sharedSharedNetWorking] getFeedForURL:nil
                                                      success:^(NSDictionary *dictionary, NSError *error){
                                                          
@@ -61,19 +75,12 @@
                                                              NSLog(@"Success with Data");
                                                             
                                                              [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://beta.person.com"]]];
-                                                             
-                                                                 [NSTimer scheduledTimerWithTimeInterval:1.5
-                                                                                                  target:self
-                                                                                                selector:@selector(hideLoader)
-                                                                                                userInfo:nil
-                                                                                                 repeats:YES];
-                                                             
-                                                         
+
                                                          });
                                                      }failure:^{
                                                          dispatch_async(dispatch_get_main_queue(), ^{
                                                              NSLog(@"Problem with Data");
-                                                             [self animateLoader];
+                                                            
                                                          });
                                                      }];
 }

@@ -13,7 +13,7 @@
 #import "PersonSharedNetworking.h"
 #import "PersonInternetConnection.h"
 
-@interface PersonWebViewController : UIViewController
+@interface PersonWebViewController : UIViewController <UIWebViewDelegate> 
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
