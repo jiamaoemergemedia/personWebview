@@ -57,7 +57,7 @@
                                                             
                                                              [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://beta.person.com"]]];
                                                              
-                                                                 [NSTimer scheduledTimerWithTimeInterval:1
+                                                                 [NSTimer scheduledTimerWithTimeInterval:1.5
                                                                                                   target:self
                                                                                                 selector:@selector(hideLoader)
                                                                                                 userInfo:nil
