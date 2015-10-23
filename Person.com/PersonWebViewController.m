@@ -25,11 +25,56 @@
     [self loadUIWebView];
 }
 
+//-(UIStatusBarStyle)preferredStatusBarStyle{
+//    return UIStatusBarStyleLightContent;
+//}
+//
+//
+//-(void)viewDidLayoutSubviews{
+//    [super viewWillLayoutSubviews];
+//    
+//    
+//    //manage rotation
+//    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+//    
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+//        UIView *view = [[UIView alloc]init];
+//        if (UIInterfaceOrientationIsPortrait(orientation)) {
+//            for (UIView *subview in [self.view subviews]) {
+//                if (subview.tag == 9) {
+//                    [subview removeFromSuperview];
+//                }
+//            }
+//            view.tag = 8;
+//            view.frame = CGRectMake(0, 0,self.view.bounds.size.width, 20);
+//            view.backgroundColor=[UIColor blackColor];
+//            [self.view addSubview:view];
+//        }
+//        if (UIInterfaceOrientationIsLandscape(orientation)) {
+//            for (UIView *subview in [self.view subviews]) {
+//                if (subview.tag == 8) {
+//                    [subview removeFromSuperview];
+//                }
+//            }
+//            view.tag = 9;
+//        }
+//    }
+//    
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//        UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0,self.view.bounds.size.width, 20)];
+//        view.backgroundColor=[UIColor blackColor];
+//        [self.view addSubview:view];
+//    }
+//}
+
 
 -(void)initMainScreen{
+    self.edgesForExtendedLayout=UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars=NO;
+    self.automaticallyAdjustsScrollViewInsets=NO;
     self.webView.clipsToBounds = NO;
     CGFloat top = 20;
-    self.webView.scrollView.contentInset = UIEdgeInsetsMake (top, 0, 0, 0);
+    self.webView.scrollView.contentInset = UIEdgeInsetsMake (top, 0,0, 0);
     self.webView.scrollView.showsHorizontalScrollIndicator = NO;
     self.webView.scrollView.showsVerticalScrollIndicator = NO;
     self.view.center = self.loaderView.center;
