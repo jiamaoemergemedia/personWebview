@@ -49,6 +49,7 @@
             view.frame = CGRectMake(0, 0,self.view.bounds.size.width, 20);
             view.backgroundColor=[UIColor blackColor];
             [self.view addSubview:view];
+             self.webView.scrollView.contentInset = UIEdgeInsetsMake (20, 0,0, 0);
         }
         if (UIInterfaceOrientationIsLandscape(orientation)) {
             for (UIView *subview in [self.view subviews]) {
@@ -57,24 +58,28 @@
                 }
             }
             view.tag = 9;
+            self.webView.scrollView.contentInset = UIEdgeInsetsMake (0, 0,0, 0);
         }
+       
     }
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0,self.view.bounds.size.width, 20)];
         view.backgroundColor=[UIColor blackColor];
         [self.view addSubview:view];
+         self.webView.scrollView.contentInset = UIEdgeInsetsMake (20, 0,0, 0);
     }
 }
 
 
 -(void)initMainScreen{
-//    self.edgesForExtendedLayout=UIRectEdgeNone;
-//    self.extendedLayoutIncludesOpaqueBars=NO;
-//    self.automaticallyAdjustsScrollViewInsets=NO;
-//    self.webView.clipsToBounds = NO;
-    CGFloat top = 40;
-    self.webView.scrollView.contentInset = UIEdgeInsetsMake (top, 0,0, 0);
+    self.edgesForExtendedLayout=UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars=NO;
+    self.automaticallyAdjustsScrollViewInsets=NO;
+    self.webView.clipsToBounds = NO;
+
+  
+    self.webView.delegate=self;
     self.webView.scrollView.showsHorizontalScrollIndicator = NO;
     self.webView.scrollView.showsVerticalScrollIndicator = NO;
     self.view.center = self.loaderView.center;
@@ -117,7 +122,6 @@
 }
 
 -(void)loadUIWebView{
-    self.webView.delegate=self;
     [[PersonSharedNetworking sharedSharedNetWorking] getFeedForURL:nil
                                                      success:^(NSDictionary *dictionary, NSError *error){
                                                          
