@@ -26,6 +26,7 @@
 }
 
 -(void)initMainScreen{
+    self.view.center = self.loaderView.center;
     self.webView.hidden = YES;
     self.view.backgroundColor = [UIColor colorWithRed:0.0f/255.0f
                                                 green:149.0f/255.0f

@@ -17,6 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
+@property (weak, nonatomic) IBOutlet UIView *loaderView;
 
 @property (weak, nonatomic) IBOutlet UILabel *loading;
 
