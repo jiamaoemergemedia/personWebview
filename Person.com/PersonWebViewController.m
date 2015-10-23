@@ -26,6 +26,8 @@
 }
 
 -(void)initMainScreen{
+    self.webView.scrollView.showsHorizontalScrollIndicator = NO;
+    self.webView.scrollView.showsVerticalScrollIndicator = NO;
     self.view.center = self.loaderView.center;
     self.webView.hidden = YES;
     self.view.backgroundColor = [UIColor colorWithRed:0.0f/255.0f
@@ -46,6 +48,7 @@
     self.webView.hidden = NO;
     self.loading.hidden = YES;
     self.loader.hidden = YES;
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 
