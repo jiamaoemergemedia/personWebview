@@ -45,6 +45,11 @@
                                                         alpha:1.0f] forState:UIControlStateNormal];
     self.updateNowButton.titleLabel.font = [UIFont fontWithName:@"OpenSans-Bold" size:18];
     self.updateNowButton.backgroundColor = [UIColor whiteColor];
+    
+    //Network checking
+    if (![PersonInternetConnection isNetworkAvailable]) {
+        return;
+    }
  
 }
 
@@ -54,6 +59,11 @@
 }
 
 - (IBAction)updateNow:(UIButton *)sender {
+    
+    //Network checking
+    if (![PersonInternetConnection isNetworkAvailable]) {
+        return;
+    }
     
 }
 @end

@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //Network checking
+    if (![PersonInternetConnection isNetworkAvailable]) {
+        return;
+    }
     
     [self initMainScreen];
     [self animateLoader];
@@ -41,10 +45,22 @@
 }
 
 -(void)loadUIWebView{
-    [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"http://google.com"]]];
-    self.webView.hidden = NO;
-    self.loading.hidden = YES;
-    self.loader.hidden = YES; 
+    [[PersonSharedNetworking sharedSharedNetWorking] getFeedForURL:nil
+                                                     success:^(NSDictionary *dictionary, NSError *error){
+                                                         
+                                                        //Use dispatch_async to update the table on the main thread
+                                                         dispatch_async(dispatch_get_main_queue(), ^{
+                                                             NSLog(@"Success with Data");
+                                                             [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://beta.person.com"]]];
+                                                             self.webView.hidden = NO;
+                                                             self.loading.hidden = YES;
+                                                             self.loader.hidden = YES;
+                                                         });
+                                                     }failure:^{
+                                                         dispatch_async(dispatch_get_main_queue(), ^{
+                                                             NSLog(@"Problem with Data");
+                                                         });
+                                                     }];
 }
 
 - (void)didReceiveMemoryWarning {

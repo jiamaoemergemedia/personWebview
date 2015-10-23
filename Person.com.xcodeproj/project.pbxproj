@@ -30,6 +30,8 @@
 		12E4903C1BDA84EE00C07FCD /* PersonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E4903B1BDA84EE00C07FCD /* PersonWebViewController.m */; };
 		12E490431BDA89CD00C07FCD /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490401BDA89CD00C07FCD /* FLAnimatedImage.m */; };
 		12E490441BDA89CD00C07FCD /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490421BDA89CD00C07FCD /* FLAnimatedImageView.m */; };
+		12E490471BDA910E00C07FCD /* PersonSharedNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490461BDA910E00C07FCD /* PersonSharedNetworking.m */; };
+		12E4904A1BDA98DD00C07FCD /* PersonInternetConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490491BDA98DD00C07FCD /* PersonInternetConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		12E490401BDA89CD00C07FCD /* FLAnimatedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImage.m; sourceTree = "<group>"; };
 		12E490411BDA89CD00C07FCD /* FLAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLAnimatedImageView.h; sourceTree = "<group>"; };
 		12E490421BDA89CD00C07FCD /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
+		12E490451BDA910E00C07FCD /* PersonSharedNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonSharedNetworking.h; sourceTree = "<group>"; };
+		12E490461BDA910E00C07FCD /* PersonSharedNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonSharedNetworking.m; sourceTree = "<group>"; };
+		12E490481BDA98DD00C07FCD /* PersonInternetConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInternetConnection.h; sourceTree = "<group>"; };
+		12E490491BDA98DD00C07FCD /* PersonInternetConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInternetConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,13 +123,14 @@
 			isa = PBXGroup;
 			children = (
 				12E48FFD1BDA7ADB00C07FCD /* AppDelegate.h */,
-				12E490221BDA7E7E00C07FCD /* loader.gif */,
 				12E48FFE1BDA7ADB00C07FCD /* AppDelegate.m */,
 				12E490031BDA7ADB00C07FCD /* ViewController.h */,
 				12E490041BDA7ADB00C07FCD /* ViewController.m */,
 				12E4903A1BDA84EE00C07FCD /* PersonWebViewController.h */,
 				12E4903B1BDA84EE00C07FCD /* PersonWebViewController.m */,
 				12E490061BDA7ADB00C07FCD /* Main.storyboard */,
+				12E490451BDA910E00C07FCD /* PersonSharedNetworking.h */,
+				12E490461BDA910E00C07FCD /* PersonSharedNetworking.m */,
 				12E490091BDA7ADB00C07FCD /* Images.xcassets */,
 				12E4900B1BDA7ADB00C07FCD /* LaunchScreen.xib */,
 				12E490001BDA7ADB00C07FCD /* Person_com.xcdatamodeld */,
@@ -135,6 +142,7 @@
 		12E48FF91BDA7ADB00C07FCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12E4904B1BDA98E600C07FCD /* PersonInternetConnection */,
 				12E4903E1BDA899400C07FCD /* AnimationGifLibrary */,
 				12E4903D1BDA898600C07FCD /* font */,
 				12E48FFA1BDA7ADB00C07FCD /* Info.plist */,
@@ -181,12 +189,22 @@
 		12E4903E1BDA899400C07FCD /* AnimationGifLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				12E490221BDA7E7E00C07FCD /* loader.gif */,
 				12E4903F1BDA89CD00C07FCD /* FLAnimatedImage.h */,
 				12E490401BDA89CD00C07FCD /* FLAnimatedImage.m */,
 				12E490411BDA89CD00C07FCD /* FLAnimatedImageView.h */,
 				12E490421BDA89CD00C07FCD /* FLAnimatedImageView.m */,
 			);
 			name = AnimationGifLibrary;
+			sourceTree = "<group>";
+		};
+		12E4904B1BDA98E600C07FCD /* PersonInternetConnection */ = {
+			isa = PBXGroup;
+			children = (
+				12E490481BDA98DD00C07FCD /* PersonInternetConnection.h */,
+				12E490491BDA98DD00C07FCD /* PersonInternetConnection.m */,
+			);
+			name = PersonInternetConnection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +321,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E490441BDA89CD00C07FCD /* FLAnimatedImageView.m in Sources */,
+				12E490471BDA910E00C07FCD /* PersonSharedNetworking.m in Sources */,
 				12E490021BDA7ADB00C07FCD /* Person_com.xcdatamodeld in Sources */,
 				12E48FFF1BDA7ADB00C07FCD /* AppDelegate.m in Sources */,
 				12E490431BDA89CD00C07FCD /* FLAnimatedImage.m in Sources */,
 				12E490051BDA7ADB00C07FCD /* ViewController.m in Sources */,
 				12E48FFC1BDA7ADB00C07FCD /* main.m in Sources */,
+				12E4904A1BDA98DD00C07FCD /* PersonInternetConnection.m in Sources */,
 				12E4903C1BDA84EE00C07FCD /* PersonWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

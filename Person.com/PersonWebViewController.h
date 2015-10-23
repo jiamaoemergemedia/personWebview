@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import "FLAnimatedImage.h" 
 #import "FLAnimatedImageView.h" 
+#import "PersonSharedNetworking.h"
+#import "PersonInternetConnection.h"
 
 @interface PersonWebViewController : UIViewController
 
