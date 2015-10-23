@@ -62,7 +62,7 @@
                 } else {
                     NSLog(@"Fail Not 200:");
                     dispatch_async(dispatch_get_main_queue(), ^{
-                        if (failureCompletion) failureCompletion();
+                    [self showAlertWithTitle:@"" message:@"Person.com is currently unavailable. Please try back later."];
                     });
                 }
             }] resume];

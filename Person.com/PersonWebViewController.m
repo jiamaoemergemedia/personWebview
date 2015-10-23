@@ -52,6 +52,7 @@
                                                              self.webView.hidden = NO;
                                                              self.loading.hidden = YES;
                                                              self.loader.hidden = YES;
+                                                         
                                                          });
                                                      }failure:^{
                                                          dispatch_async(dispatch_get_main_queue(), ^{

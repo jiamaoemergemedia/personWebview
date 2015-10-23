@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PersonInternetConnection.h"
+#import "NSObject+PersonAlert.h"
 
 
 @interface PersonSharedNetworking : NSObject  <NSURLConnectionDataDelegate>

@@ -33,6 +33,7 @@
 		12E490471BDA910E00C07FCD /* PersonSharedNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490461BDA910E00C07FCD /* PersonSharedNetworking.m */; };
 		12E4904A1BDA98DD00C07FCD /* PersonInternetConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490491BDA98DD00C07FCD /* PersonInternetConnection.m */; };
 		12E4904E1BDA9AD500C07FCD /* Spashing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E4904D1BDA9AD500C07FCD /* Spashing.storyboard */; };
+		12E490511BDA9CB900C07FCD /* NSObject+PersonAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E490501BDA9CB900C07FCD /* NSObject+PersonAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		12E490481BDA98DD00C07FCD /* PersonInternetConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInternetConnection.h; sourceTree = "<group>"; };
 		12E490491BDA98DD00C07FCD /* PersonInternetConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInternetConnection.m; sourceTree = "<group>"; };
 		12E4904D1BDA9AD500C07FCD /* Spashing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Spashing.storyboard; sourceTree = "<group>"; };
+		12E4904F1BDA9CB900C07FCD /* NSObject+PersonAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PersonAlert.h"; sourceTree = "<group>"; };
+		12E490501BDA9CB900C07FCD /* NSObject+PersonAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PersonAlert.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 		12E48FF91BDA7ADB00C07FCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12E490521BDA9CC400C07FCD /* PersonAlert */,
 				12E4904C1BDA9A0A00C07FCD /* PersonNetworkSetup */,
 				12E4904B1BDA98E600C07FCD /* PersonInternetConnection */,
 				12E4903E1BDA899400C07FCD /* AnimationGifLibrary */,
@@ -216,6 +220,15 @@
 				12E490461BDA910E00C07FCD /* PersonSharedNetworking.m */,
 			);
 			name = PersonNetworkSetup;
+			sourceTree = "<group>";
+		};
+		12E490521BDA9CC400C07FCD /* PersonAlert */ = {
+			isa = PBXGroup;
+			children = (
+				12E4904F1BDA9CB900C07FCD /* NSObject+PersonAlert.h */,
+				12E490501BDA9CB900C07FCD /* NSObject+PersonAlert.m */,
+			);
+			name = PersonAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E490441BDA89CD00C07FCD /* FLAnimatedImageView.m in Sources */,
+				12E490511BDA9CB900C07FCD /* NSObject+PersonAlert.m in Sources */,
 				12E490471BDA910E00C07FCD /* PersonSharedNetworking.m in Sources */,
 				12E490021BDA7ADB00C07FCD /* Person_com.xcdatamodeld in Sources */,
 				12E48FFF1BDA7ADB00C07FCD /* AppDelegate.m in Sources */,
