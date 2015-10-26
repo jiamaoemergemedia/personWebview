@@ -73,16 +73,9 @@
 
 
 -(void)initMainScreen{
-    self.edgesForExtendedLayout=UIRectEdgeNone;
-    self.extendedLayoutIncludesOpaqueBars=NO;
-    self.automaticallyAdjustsScrollViewInsets=NO;
-    self.webView.clipsToBounds = NO;
-
-  
     self.webView.delegate=self;
     self.webView.scrollView.showsHorizontalScrollIndicator = NO;
     self.webView.scrollView.showsVerticalScrollIndicator = NO;
-    self.view.center = self.loaderView.center;
     self.webView.hidden = YES;
     self.view.backgroundColor = [UIColor colorWithRed:0.0f/255.0f
                                                 green:149.0f/255.0f
@@ -118,7 +111,9 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     [self hideLoader];
-    self.webView.scrollView.contentOffset = CGPointMake(0, 0);
+    self.webView.scrollView.contentOffset = CGPointMake(0, -20);
+    [self.webView.scrollView setContentSize: CGSizeMake(self.webView.frame.size.width, self.webView.scrollView.contentSize.height)];
+
 }
 
 -(void)loadUIWebView{
