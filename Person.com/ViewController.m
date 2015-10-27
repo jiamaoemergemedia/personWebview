@@ -22,12 +22,13 @@
         return;
     }
     
+    [self webView];
+    
     self.apiVersion = [[PersonAPIVersion alloc]init];
     [self.apiVersion getAppVersion: ^(NSDictionary *dictionary){
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([[dictionary objectForKey:@"current_ios_version"] isEqualToNumber:@2]) {
                 NSLog(@"current version = 2");
-                [self webView];
               [self performSegueWithIdentifier:@"show" sender:self];
             } else {
                 NSLog(@"current version > 2");
@@ -35,14 +36,16 @@
             }
         });
     }];
-    
-    
-    
 }
+
 -(void) webView{
-    self.pleaseUpdate.alpha = 0;
-    self.inOrderTo.alpha = 0;
-    self.updateNowButton.alpha = 0;
+    self.pleaseUpdate.hidden = YES;
+    self.inOrderTo.hidden = YES;
+    self.updateNowButton.hidden = YES;
+    self.view.backgroundColor = [UIColor colorWithRed:0.0f/255.0f
+                                                green:149.0f/255.0f
+                                                 blue:255.0f/255.0f
+                                                alpha:1.0f];
 }
 
 
