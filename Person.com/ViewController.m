@@ -17,6 +17,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Network checking
+    if (![PersonInternetConnection isNetworkAvailable]) {
+        return;
+    }
+    
+    self.apiVersion = [[PersonAPIVersion alloc]init];
+    [self.apiVersion getAppVersion: ^(NSDictionary *dictionary){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if ([[dictionary objectForKey:@"current_ios_version"] isEqualToNumber:@2]) {
+                NSLog(@"current version = 2");
+                [NSTimer scheduledTimerWithTimeInterval:0.1
+                                                 target:self
+                                               selector:@selector(webView)
+                                               userInfo:nil
+                                                repeats:NO];
+            } else {
+                NSLog(@"current version > 2");
+                [self updateAlert];
+            }
+        });
+    }];
+    
+    
+    
+}
+-(void) webView{
+    [self performSegueWithIdentifier:@"show" sender:self];
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)updateAlert{
     self.view.backgroundColor = [UIColor colorWithRed:0.0f/255.0f
                                                 green:149.0f/255.0f
                                                  blue:255.0f/255.0f
@@ -45,18 +81,6 @@
                                                         alpha:1.0f] forState:UIControlStateNormal];
     self.updateNowButton.titleLabel.font = [UIFont fontWithName:@"OpenSans-Bold" size:18];
     self.updateNowButton.backgroundColor = [UIColor whiteColor];
-    
-    //Network checking
-    if (![PersonInternetConnection isNetworkAvailable]) {
-        return;
-    }
- 
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{

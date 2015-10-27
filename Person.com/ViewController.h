@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "PersonInternetConnection.h"
 #import "PersonAPIVersion.h"
+#import "PersonAPIVersion.h"
 
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *pleaseUpdate;
 @property (weak, nonatomic) IBOutlet UILabel *inOrderTo;
 @property (weak, nonatomic) IBOutlet UIButton *updateNowButton;
+@property (strong, nonatomic) PersonAPIVersion *apiVersion;
 
 - (IBAction)updateNow:(UIButton *)sender;
 
