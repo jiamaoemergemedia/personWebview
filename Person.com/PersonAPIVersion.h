@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "PersonInternetConnection.h"
 
 @interface PersonAPIVersion : NSObject
 @property (nonatomic, strong) NSDictionary *dictionary;
