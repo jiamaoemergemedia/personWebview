@@ -27,11 +27,8 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([[dictionary objectForKey:@"current_ios_version"] isEqualToNumber:@2]) {
                 NSLog(@"current version = 2");
-                [NSTimer scheduledTimerWithTimeInterval:0.1
-                                                 target:self
-                                               selector:@selector(webView)
-                                               userInfo:nil
-                                                repeats:NO];
+                [self webView];
+              [self performSegueWithIdentifier:@"show" sender:self];
             } else {
                 NSLog(@"current version > 2");
                 [self updateAlert];
@@ -43,7 +40,9 @@
     
 }
 -(void) webView{
-    [self performSegueWithIdentifier:@"show" sender:self];
+    self.pleaseUpdate.alpha = 0;
+    self.inOrderTo.alpha = 0;
+    self.updateNowButton.alpha = 0;
 }
 
 
