@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12DDA8B61BDFBB3800FEEFA4 /* PersonAPIVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DDA8B51BDFBB3800FEEFA4 /* PersonAPIVersion.m */; };
 		12E48FFC1BDA7ADB00C07FCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E48FFB1BDA7ADB00C07FCD /* main.m */; };
 		12E48FFF1BDA7ADB00C07FCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E48FFE1BDA7ADB00C07FCD /* AppDelegate.m */; };
 		12E490021BDA7ADB00C07FCD /* Person_com.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12E490001BDA7ADB00C07FCD /* Person_com.xcdatamodeld */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12DDA8B41BDFBB3800FEEFA4 /* PersonAPIVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonAPIVersion.h; sourceTree = "<group>"; };
+		12DDA8B51BDFBB3800FEEFA4 /* PersonAPIVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonAPIVersion.m; sourceTree = "<group>"; };
 		12E48FF61BDA7ADB00C07FCD /* Person.com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Person.com.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E48FFA1BDA7ADB00C07FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E48FFB1BDA7ADB00C07FCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 			children = (
 				12E490571BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.h */,
 				12E490581BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m */,
+				12DDA8B41BDFBB3800FEEFA4 /* PersonAPIVersion.h */,
+				12DDA8B51BDFBB3800FEEFA4 /* PersonAPIVersion.m */,
 				12E490521BDA9CC400C07FCD /* PersonAlert */,
 				12E4904C1BDA9A0A00C07FCD /* PersonNetworkSetup */,
 				12E4904B1BDA98E600C07FCD /* PersonInternetConnection */,
@@ -358,6 +363,7 @@
 				12E48FFF1BDA7ADB00C07FCD /* AppDelegate.m in Sources */,
 				12E490431BDA89CD00C07FCD /* FLAnimatedImage.m in Sources */,
 				12E490051BDA7ADB00C07FCD /* ViewController.m in Sources */,
+				12DDA8B61BDFBB3800FEEFA4 /* PersonAPIVersion.m in Sources */,
 				12E48FFC1BDA7ADB00C07FCD /* main.m in Sources */,
 				12E4904A1BDA98DD00C07FCD /* PersonInternetConnection.m in Sources */,
 				12E4903C1BDA84EE00C07FCD /* PersonWebViewController.m in Sources */,

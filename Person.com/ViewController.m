@@ -67,7 +67,6 @@
 -(void)viewDidLayoutSubviews{
     [super viewWillLayoutSubviews];
     
-    
     //manage rotation
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     
@@ -100,7 +99,6 @@
         [self.view addSubview:view];
     }
 }
-
 
 - (IBAction)updateNow:(UIButton *)sender {
     
