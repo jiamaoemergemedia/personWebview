@@ -60,7 +60,7 @@
                         <outlet property="inOrderTo" destination="ism-LY-Ys8" id="HU6-gZ-z7G"/>
                         <outlet property="pleaseUpdate" destination="he4-OK-HL3" id="HWK-0n-K78"/>
                         <outlet property="updateNowButton" destination="HKC-Qe-qUU" id="Ngb-I9-VJ9"/>
-                        <segue destination="jqQ-bh-1fa" kind="showDetail" identifier="show" id="M8K-zC-33Q"/>
+                        <segue destination="jqQ-bh-1fa" kind="custom" identifier="show" customClass="PersonUIViewControllerTransitionSegue" id="M8K-zC-33Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
