@@ -129,11 +129,12 @@
                                                          dispatch_async(dispatch_get_main_queue(), ^{
                                                              NSLog(@"Success with Data");
                                                             
-//                                                             if (![self.update isEqualToString:@"update"]) {
+                                                             if (![self.update isEqualToString:@"update"]) {
                                                              [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://beta.person.com"]]];
-//                                                             } else {
-//                                                                  [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://itunes.apple.com/us/app/person.com/id407206338?mt=8"]]];
-//                                                             }
+                                                             } else {
+//                                                                  [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:@"https://geo.itunes.apple.com/us/app/person.com/id407206338?mt=8"]]];
+                                                                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://geo.itunes.apple.com/us/app/person.com/id407206338?mt=8"]];
+                                                             }
                                                              });
                                                      }failure:^{
                                                          dispatch_async(dispatch_get_main_queue(), ^{

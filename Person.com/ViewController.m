@@ -29,6 +29,12 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([[dictionary objectForKey:@"current_ios_version"] isEqualToNumber:@3]) {
                 NSLog(@"current version = 2");
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                
+                NSString *update = @"NotUpdate";
+                [defaults setObject: update forKey:@"update"];
+                [defaults synchronize];
+                
               [self performSegueWithIdentifier:@"show" sender:self];
             } else {
                 NSLog(@"current version > 2");
@@ -134,13 +140,12 @@
     //Network checking
     if (![PersonInternetConnection isNetworkAvailable]) {
         return;
-    } else {
+    }
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         
         NSString *update = @"update";
         [defaults setObject: update forKey:@"update"];
         [defaults synchronize];
-    }
     
 }
 @end
