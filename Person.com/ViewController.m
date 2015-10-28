@@ -29,7 +29,7 @@
     self.apiVersion = [[PersonAPIVersion alloc]init];
     [self.apiVersion getAppVersion: ^(NSDictionary *dictionary){
         dispatch_async(dispatch_get_main_queue(), ^{
-            if ([[dictionary objectForKey:@"current_ios_version"] isEqualToNumber:@3]) {
+            if ([[dictionary objectForKey:@"current_ios_version"] isEqualToNumber:@2]) {
                 NSLog(@"current version = 2");
                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
                 

@@ -120,6 +120,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12009A191BE147EB00950597 /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				12009A161BE1471B00950597 /* GAI+ScreenName.h */,
+				12009A171BE1471B00950597 /* GAI+ScreenName.m */,
+			);
+			name = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		12009A1A1BE1480200950597 /* PersonAPIVersion */ = {
+			isa = PBXGroup;
+			children = (
+				12DDA8B41BDFBB3800FEEFA4 /* PersonAPIVersion.h */,
+				12DDA8B51BDFBB3800FEEFA4 /* PersonAPIVersion.m */,
+			);
+			name = PersonAPIVersion;
+			sourceTree = "<group>";
+		};
+		12009A1B1BE1481800950597 /* PersonPageTransition */ = {
+			isa = PBXGroup;
+			children = (
+				12E490571BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.h */,
+				12E490581BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m */,
+			);
+			name = PersonPageTransition;
+			sourceTree = "<group>";
+		};
 		12E48FED1BDA7ADB00C07FCD = {
 			isa = PBXGroup;
 			children = (
@@ -162,12 +189,9 @@
 		12E48FF91BDA7ADB00C07FCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				12009A161BE1471B00950597 /* GAI+ScreenName.h */,
-				12009A171BE1471B00950597 /* GAI+ScreenName.m */,
-				12E490571BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.h */,
-				12E490581BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m */,
-				12DDA8B41BDFBB3800FEEFA4 /* PersonAPIVersion.h */,
-				12DDA8B51BDFBB3800FEEFA4 /* PersonAPIVersion.m */,
+				12009A1B1BE1481800950597 /* PersonPageTransition */,
+				12009A1A1BE1480200950597 /* PersonAPIVersion */,
+				12009A191BE147EB00950597 /* GoogleAnalytics */,
 				12E490521BDA9CC400C07FCD /* PersonAlert */,
 				12E4904C1BDA9A0A00C07FCD /* PersonNetworkSetup */,
 				12E4904B1BDA98E600C07FCD /* PersonInternetConnection */,
