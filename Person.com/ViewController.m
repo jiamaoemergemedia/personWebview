@@ -131,6 +131,12 @@
     //Network checking
     if (![PersonInternetConnection isNetworkAvailable]) {
         return;
+    } else {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        NSString *update = @"update";
+        [defaults setObject: update forKey:@"update"];
+        [defaults synchronize];
     }
     
 }

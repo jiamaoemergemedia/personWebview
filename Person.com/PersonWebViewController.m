@@ -23,6 +23,11 @@
     [self initMainScreen];
     [self animateLoader];
     [self loadUIWebView];
+    
+    NSUserDefaults *location = [NSUserDefaults standardUserDefaults];
+    self.update = [location objectForKey:@"update"];
+    
+    
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
@@ -124,9 +129,12 @@
                                                          dispatch_async(dispatch_get_main_queue(), ^{
                                                              NSLog(@"Success with Data");
                                                             
+                                                             if (![self.update isEqualToString:@"update"]) {
                                                              [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://beta.person.com"]]];
-
-                                                         });
+                                                             } else {
+                                                                  [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://itunes.apple.com/us/app/person.com/id407206338?mt=8"]]];
+                                                             }
+                                                             });
                                                      }failure:^{
                                                          dispatch_async(dispatch_get_main_queue(), ^{
                                                              NSLog(@"Problem with Data");

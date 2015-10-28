@@ -23,4 +23,6 @@
 
 @property (weak, nonatomic) IBOutlet FLAnimatedImageView *loader;
 
+@property (strong, nonatomic) NSString *update; 
+
 @end
