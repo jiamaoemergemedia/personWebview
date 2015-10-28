@@ -27,7 +27,7 @@
     self.apiVersion = [[PersonAPIVersion alloc]init];
     [self.apiVersion getAppVersion: ^(NSDictionary *dictionary){
         dispatch_async(dispatch_get_main_queue(), ^{
-            if ([[dictionary objectForKey:@"current_ios_version"] isEqualToNumber:@2]) {
+            if ([[dictionary objectForKey:@"current_ios_version"] isEqualToNumber:@3]) {
                 NSLog(@"current version = 2");
               [self performSegueWithIdentifier:@"show" sender:self];
             } else {
@@ -55,6 +55,9 @@
 }
 
 -(void)updateAlert{
+    self.pleaseUpdate.hidden = NO;
+    self.inOrderTo.hidden = NO;
+    self.updateNowButton.hidden = NO;
     self.view.backgroundColor = [UIColor colorWithRed:0.0f/255.0f
                                                 green:149.0f/255.0f
                                                  blue:255.0f/255.0f
