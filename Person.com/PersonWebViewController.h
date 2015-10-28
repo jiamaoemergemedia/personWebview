@@ -12,6 +12,7 @@
 #import "FLAnimatedImageView.h" 
 #import "PersonSharedNetworking.h"
 #import "PersonInternetConnection.h"
+#import "GAI+ScreenName.h"
 
 @interface PersonWebViewController : UIViewController <UIWebViewDelegate> 
 

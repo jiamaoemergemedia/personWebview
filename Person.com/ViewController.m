@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [GAI defaultTrackerSendScreenName:@"ViewController.h"];
+    
     //Network checking
     if (![PersonInternetConnection isNetworkAvailable]) {
         return;

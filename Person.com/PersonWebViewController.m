@@ -16,10 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [GAI defaultTrackerSendScreenName:@"PersonWebViewController.h"];
+    
     //Network checking
     if (![PersonInternetConnection isNetworkAvailable]) {
         return;
     }
+    
     [self initMainScreen];
     [self animateLoader];
     [self loadUIWebView];

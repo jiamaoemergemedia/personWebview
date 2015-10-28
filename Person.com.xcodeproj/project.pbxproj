@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A90BC0B7F4813A180024B11 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 645FD543AA41ED3E25945086 /* libPods.a */; };
+		12009A181BE1471B00950597 /* GAI+ScreenName.m in Sources */ = {isa = PBXBuildFile; fileRef = 12009A171BE1471B00950597 /* GAI+ScreenName.m */; };
 		12DDA8B61BDFBB3800FEEFA4 /* PersonAPIVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DDA8B51BDFBB3800FEEFA4 /* PersonAPIVersion.m */; };
 		12E48FFC1BDA7ADB00C07FCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E48FFB1BDA7ADB00C07FCD /* main.m */; };
 		12E48FFF1BDA7ADB00C07FCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E48FFE1BDA7ADB00C07FCD /* AppDelegate.m */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12009A161BE1471B00950597 /* GAI+ScreenName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GAI+ScreenName.h"; sourceTree = "<group>"; };
+		12009A171BE1471B00950597 /* GAI+ScreenName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GAI+ScreenName.m"; sourceTree = "<group>"; };
 		12DDA8B41BDFBB3800FEEFA4 /* PersonAPIVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonAPIVersion.h; sourceTree = "<group>"; };
 		12DDA8B51BDFBB3800FEEFA4 /* PersonAPIVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonAPIVersion.m; sourceTree = "<group>"; };
 		12E48FF61BDA7ADB00C07FCD /* Person.com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Person.com.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +162,8 @@
 		12E48FF91BDA7ADB00C07FCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				12009A161BE1471B00950597 /* GAI+ScreenName.h */,
+				12009A171BE1471B00950597 /* GAI+ScreenName.m */,
 				12E490571BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.h */,
 				12E490581BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m */,
 				12DDA8B41BDFBB3800FEEFA4 /* PersonAPIVersion.h */,
@@ -433,6 +438,7 @@
 				12E490441BDA89CD00C07FCD /* FLAnimatedImageView.m in Sources */,
 				12E490511BDA9CB900C07FCD /* NSObject+PersonAlert.m in Sources */,
 				12E490471BDA910E00C07FCD /* PersonSharedNetworking.m in Sources */,
+				12009A181BE1471B00950597 /* GAI+ScreenName.m in Sources */,
 				12E490021BDA7ADB00C07FCD /* Person_com.xcdatamodeld in Sources */,
 				12E490591BDADCC700C07FCD /* PersonUIViewControllerTransitionSegue.m in Sources */,
 				12E48FFF1BDA7ADB00C07FCD /* AppDelegate.m in Sources */,

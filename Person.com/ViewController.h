@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PersonInternetConnection.h"
 #import "PersonAPIVersion.h"
-#import "PersonAPIVersion.h"
+#import "GAI+ScreenName.h"
 
 @interface ViewController : UIViewController
 
