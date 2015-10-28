@@ -147,5 +147,8 @@
         [defaults setObject: update forKey:@"update"];
         [defaults synchronize];
     
+    NSString *iTunesLink = @"https://itunes.apple.com/us/app/person.com/id407206338?mt=8";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
+    
 }
 @end
