@@ -43,7 +43,6 @@
                                         </state>
                                         <connections>
                                             <action selector="updateNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBQ-XW-PhF"/>
-                                            <segue destination="jqQ-bh-1fa" kind="custom" customClass="PersonUIViewControllerTransitionSegue" id="oR6-xA-y3n"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -83,7 +82,7 @@
                                 <rect key="frame" x="-11" y="-3" width="619" height="605"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BEr-HZ-Qii">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BEr-HZ-Qii">
                                 <rect key="frame" x="171" y="197" width="131" height="129"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOADING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2P-AD-MFP">
@@ -160,7 +159,4 @@
     <resources>
         <image name="loader.gif" width="240" height="240"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="M8K-zC-33Q"/>
-    </inferredMetricsTieBreakers>
 </document>
