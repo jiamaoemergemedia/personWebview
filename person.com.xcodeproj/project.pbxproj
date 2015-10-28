@@ -55,7 +55,7 @@
 		12009A171BE1471B00950597 /* GAI+ScreenName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GAI+ScreenName.m"; sourceTree = "<group>"; };
 		12DDA8B41BDFBB3800FEEFA4 /* PersonAPIVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonAPIVersion.h; sourceTree = "<group>"; };
 		12DDA8B51BDFBB3800FEEFA4 /* PersonAPIVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonAPIVersion.m; sourceTree = "<group>"; };
-		12E48FF61BDA7ADB00C07FCD /* Person.com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Person.com.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E48FF61BDA7ADB00C07FCD /* person.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = person.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E48FFA1BDA7ADB00C07FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E48FFB1BDA7ADB00C07FCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		12E48FFD1BDA7ADB00C07FCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		12E48FF71BDA7ADB00C07FCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12E48FF61BDA7ADB00C07FCD /* Person.com.app */,
+				12E48FF61BDA7ADB00C07FCD /* person.app */,
 				12E490121BDA7ADB00C07FCD /* Person.comTests.xctest */,
 			);
 			name = Products;
@@ -297,9 +297,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		12E48FF51BDA7ADB00C07FCD /* Person.com */ = {
+		12E48FF51BDA7ADB00C07FCD /* person */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12E4901C1BDA7ADB00C07FCD /* Build configuration list for PBXNativeTarget "Person.com" */;
+			buildConfigurationList = 12E4901C1BDA7ADB00C07FCD /* Build configuration list for PBXNativeTarget "person" */;
 			buildPhases = (
 				0B911B4E026952F23165E277 /* Check Pods Manifest.lock */,
 				12E48FF21BDA7ADB00C07FCD /* Sources */,
@@ -312,9 +312,9 @@
 			);
 			dependencies = (
 			);
-			name = Person.com;
+			name = person;
 			productName = Person.com;
-			productReference = 12E48FF61BDA7ADB00C07FCD /* Person.com.app */;
+			productReference = 12E48FF61BDA7ADB00C07FCD /* person.app */;
 			productType = "com.apple.product-type.application";
 		};
 		12E490111BDA7ADB00C07FCD /* Person.comTests */ = {
@@ -354,7 +354,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 12E48FF11BDA7ADB00C07FCD /* Build configuration list for PBXProject "com.person.person" */;
+			buildConfigurationList = 12E48FF11BDA7ADB00C07FCD /* Build configuration list for PBXProject "person.com" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -367,7 +367,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12E48FF51BDA7ADB00C07FCD /* Person.com */,
+				12E48FF51BDA7ADB00C07FCD /* person */,
 				12E490111BDA7ADB00C07FCD /* Person.comTests */,
 			);
 		};
@@ -488,7 +488,7 @@
 /* Begin PBXTargetDependency section */
 		12E490141BDA7ADB00C07FCD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 12E48FF51BDA7ADB00C07FCD /* Person.com */;
+			target = 12E48FF51BDA7ADB00C07FCD /* person */;
 			targetProxy = 12E490131BDA7ADB00C07FCD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -656,7 +656,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12E48FF11BDA7ADB00C07FCD /* Build configuration list for PBXProject "com.person.person" */ = {
+		12E48FF11BDA7ADB00C07FCD /* Build configuration list for PBXProject "person.com" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12E4901A1BDA7ADB00C07FCD /* Debug */,
@@ -665,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12E4901C1BDA7ADB00C07FCD /* Build configuration list for PBXNativeTarget "Person.com" */ = {
+		12E4901C1BDA7ADB00C07FCD /* Build configuration list for PBXNativeTarget "person" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12E4901D1BDA7ADB00C07FCD /* Debug */,
