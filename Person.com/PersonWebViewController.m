@@ -26,8 +26,6 @@
     
     NSUserDefaults *location = [NSUserDefaults standardUserDefaults];
     self.update = [location objectForKey:@"update"];
-    
-    
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
@@ -132,8 +130,7 @@
                                                              if (![self.update isEqualToString:@"update"]) {
                                                              [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://beta.person.com"]]];
                                                              } else {
-//                                                                  [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:@"https://geo.itunes.apple.com/us/app/person.com/id407206338?mt=8"]]];
-                                                                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"itms-apps://geo.itunes.apple.com/us/app/person.com/id407206338?mt=8"]];
+                                                              [self.webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString: @"https://beta.person.com"]]];
                                                              }
                                                              });
                                                      }failure:^{
